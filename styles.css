@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    background:#7a7070;
+    margin: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    
+    border: 2px solid #333;
+    background-color: #333;
+}
+
+.cell {
+    background-color: #fff;
+    width: calc(100% / 16);
+    height: calc(100% / 16);
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
