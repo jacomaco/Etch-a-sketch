@@ -27,6 +27,7 @@ body {
     
     border: 2px solid #333;
     background-color: #333;
+    box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 0.2);
 }
 
 .cell {
