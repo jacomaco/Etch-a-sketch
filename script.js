@@ -1,5 +1,5 @@
 let gridSize;
-let currentMode = "black"; // default mode: black
+let currentMode = "black";
 
 const clearBtn = document.getElementById("clearBtn");
 const enterGridSizeBtn = document.getElementById("enterBtn");
@@ -23,19 +23,12 @@ clearBtn.addEventListener("click", () => {
 });
 
 rGBButton.addEventListener("click", () => {
-    currentMode = "rainbow"; // Set mode to rainbow
+    currentMode = "rainbow";
 });
 
 eraserBtn.addEventListener("click", () => {
-    currentMode = "eraser"; // Set mode to eraser
+    currentMode = "eraser";
 });
-
-// You might want a button to go back to black,
-// or you can make the buttons toggle. For now, let's assume
-// clicking "Clear" or a "Black" button sets it back,
-// or simply add a "Black Pen" button.
-
-// --- THE LOGIC ---
 
 function initializeBoard() {
     while (true) {
@@ -46,7 +39,6 @@ function initializeBoard() {
     const board = document.querySelector(".board");
     const cellLength = `calc(100% / ${gridSize})`;
 
-    // create grid
     const boardSize = gridSize * gridSize;
     for (let i = 0; i < boardSize; i++) {
         let div = document.createElement("div");
@@ -54,14 +46,13 @@ function initializeBoard() {
         div.style.width = cellLength;
         div.style.height = cellLength;
 
-        // CHECK THE MODE VARIABLE ON HOVER
         div.addEventListener("mouseenter", (e) => {
             if (currentMode === "rainbow") {
                 e.currentTarget.style.background = getRandomColor();
             } else if (currentMode === "eraser") {
-                e.currentTarget.style.background = "#d3d3d3"; // Eraser just paints white!
+                e.currentTarget.style.background = "#d3d3d3";
             } else {
-                e.currentTarget.style.background = "black"; // Default
+                e.currentTarget.style.background = "black";
             }
         });
 
