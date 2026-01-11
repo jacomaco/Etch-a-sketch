@@ -2,11 +2,15 @@ let gridSize;
 
 initializeBoard();
 const clearBtn = document.getElementById("clearBtn");
+const enterGridSizeBtn = document.getElementById("enterBtn");
 clearBtn.addEventListener("click", () => {
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
         cell.style.background = "white";
     });
+});
+enterGridSizeBtn.addEventListener("click", () => {
+    location.reload();
 });
 
 function initializeBoard() {
@@ -33,6 +37,4 @@ function initializeBoard() {
         board.appendChild(div);
     }
 }
-
-
 // When the mouse hovers over a cell, change that cells background-color to black

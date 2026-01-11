@@ -1,15 +1,15 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-    background:#7a7070;
+    background: #9ca3af;
     margin: 0;
 }
 .container {
@@ -34,8 +34,8 @@ body {
 }
 
 .cell {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #d3d3d3;
+    border: 1px solid #4b5563;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +50,22 @@ body {
 button {
     font-size: 30px;
     padding: 1rem;
+    border-radius: 20px;
+    background-color: #a78bfa;
+    color: #ffffff;
+}
+#clearBtn {
+    background-color: #dc2626;
+}
+#enterBtn {
+    background-color: #2563eb;
+}
+#specialBtn {
+    background-color: #a78bfa;
+}
+
+button:hover {
+    background-color: #e9c9b679;
 }
 
 .btnRow {
