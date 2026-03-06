@@ -2,4 +2,4 @@
 etch a scetch js project
 
 ## Live Preview
-git@github.com:jacomaco/Etch-a-sketch.git
+https://jacomaco.github.io/Etch-a-sketch/
